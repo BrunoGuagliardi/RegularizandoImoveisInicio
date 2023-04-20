@@ -1,0 +1,664 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+header li, a, button{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #f0ece9;
+  text-decoration: none;
+}
+
+header{
+  background-color: #29282D;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 280px;
+  max-width: 1800px;
+  padding: 10px 5%;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.fundonav{
+  position: relative;
+  background-color: #29282D;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
+}
+
+.logo{
+  cursor: pointer;
+  height: 59px;
+  width: 146px;
+}
+
+.btn-menu{
+  display: none;
+}
+
+.nav_links{
+  list-style: none;
+}
+
+.nav_links li{
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav_links li a{
+  transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover{
+  color: #6768ab;
+}
+
+nav:focus-within .nav_links{
+  visibility: visible;
+  overflow-y: auto;
+}
+
+nav:focus-within .menu{
+  border-top-color: transparent;
+}
+
+.contato-button{
+  padding: 9px 25px;
+  background-color: #6768ab;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.contato-button:hover{
+  color: #f0ece9;
+  background-color: #6768abc7;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+  background-color: #29282D;
+}
+
+.inicio{
+  display: flex;
+  background-color: #f0ece9;
+  padding: 20px;
+  min-width: 280px;
+  max-width: 1000px;
+  margin: auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.inicio p{
+  display: inline-flex;
+  margin: auto;
+  text-align: justify;
+  color: #29282D;
+  font-size: 18px;
+  background-color: #f0ece9;
+  text-indent: 40px;
+}
+
+.inicio img{
+  display: block;
+  float: left;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  padding: 30px;
+}
+
+.inicio a{
+  display: table;
+  font-size: 18px;
+  margin: 0 auto;
+  margin-top: 20px;
+  text-align: center;
+  color: #6768ab;
+  background-color: #DBD3D0;
+  border-radius: 20px;
+  padding: 8px 20px;
+}
+
+.inic{
+  flex: 0 0 auto;
+  width: 50%;
+}
+
+.inic.img{
+  background-image:url("https://www.cashme.com.br/blog/wp-content/uploads/2020/03/marco-12.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.inic.texto{
+  padding: 15px;
+  padding-left: 25px;
+}
+
+.fundoinicio{
+  background-color: #f0ece9;
+}
+
+.quemsomos{
+  background-color: #625c60;
+  padding: 20px;
+  min-width: 280px;
+  max-width: 1000px;
+  margin: auto;
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+.quemsomos h1{
+  display: table;
+  width: 30%;
+  border: 10px solid #6768ab;
+  border-radius: 20px;
+  font-size: 25px;
+  text-align: center;
+  background-color: #6768ab;
+  color: #f0ece9;
+}
+
+.dulce img{
+  display: block;
+  width: 40%;
+  height: 40%;
+  float: right;
+  margin: auto;
+  padding: 20px;
+}
+
+.rose img{
+  display: block;
+  width: 40%;
+  height: 40%;
+  float: left;
+  margin: auto;
+  padding: 20px;
+}
+
+.quemsomos p{
+  display: inline-flexbox;
+  margin: auto;
+  text-align: justify;
+  color: #f0ece9;
+  font-size: 23px;
+  background-color: transparent;
+  text-indent: 50px;
+  padding: 20px;
+}
+
+.quemsomos button{
+  padding: 9px 25px;
+  display: table;
+  float: right;
+  text-align: center;
+  margin: auto;
+  background-color: #6768ab;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.quemsomos button:hover{
+  background-color: #6768abc7;
+}
+
+.fundoquemsomos{
+  background-color: #625c60;
+}
+
+.blog{
+  background-color: #DBD3D0;
+  padding: 20px;
+  min-width: 280px;
+  max-width: 1000px;
+  margin: auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.blog h1{
+  text-align: center;
+  color: #6768ab;
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+
+.cardespaço{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.cardbody{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+  border-radius: 25px;
+  background-color: #f0ece9;
+  overflow: auto;
+  flex: 1;
+  box-shadow: 0 4px 6px rgb(0, 0, 0, 0.3);
+}
+
+.cardbody img{
+  width: 100%;
+  height: 200px;
+  object-fit: cover; 
+}
+
+.cardbody h2{
+  padding-top: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 22px;
+  color: #6768ab;
+  text-align: center;
+}
+
+.cardbody p{
+  display: table;
+  margin: auto;
+  text-indent: 25px;
+  padding: 20px;
+  font-size: 18px;
+  text-align: justify;
+  background-color: transparent;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.blog button{
+  padding: 9px 25px;
+  display: block;
+  text-align: center;
+  margin: auto;
+  background-color: #6768ab;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  margin-top: 20px;
+}
+
+.blog button:hover{
+  background-color: #6768abc7;
+}
+
+.fundoblog{
+  background-color: #DBD3D0;
+}
+
+.servicos{
+  background-color: #AEA292;
+  padding: 20px;
+  min-width: 280px;
+  max-width: 1000px;
+  margin: auto;
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+.servicos h1{
+  display: table;
+  width: 30%;
+  border: 10px solid #6768ab;
+  border-radius: 20px;
+  font-size: 25px;
+  text-align: center;
+  background-color: #6768ab;
+  color: #f0ece9;
+}
+
+.servicos p{
+  display: table;
+  margin: 10px;
+  text-align: center;
+  color: #29282D;
+  font-size: 20px;
+  background-color: #f0ece9;
+  padding: 15px;
+  border-radius: 15px;
+
+}
+
+.servicos span{
+  color: #6768ab;
+  font-size: 25px;
+}
+
+.boxservicos{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 20px;
+  background-color: transparent;
+}
+
+.servicos img{
+  display: flexbox;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  vertical-align: middle;
+  padding: 5px;
+}
+
+.servicos button{
+  padding: 9px 25px;
+  display: table;
+  float: right;
+  text-align: center;
+  margin: auto;
+  background-color: #6768ab;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.servicos button:hover{
+  background-color: #6768abc7;
+}
+
+.fundoservicos{
+  background-color: #AEA292;
+}
+
+footer{
+  display: grid;
+  margin: auto;
+  padding: 30px 5%;
+  background-color: #29282D;
+  min-width: 280px;
+  max-width: 1800px;
+  color: #f0ece9;
+  grid-template-areas: 
+  "infos uteis"; 
+}
+
+.uteis{
+  grid-area: "uteis";
+  min-width: 140px;
+  max-width: 900px;
+}
+
+.infos{
+  grid-area: "infos";
+  min-width: 140px;
+  max-width: 900px;
+}
+
+footer p{
+  font-size: 18px;
+  display: table;
+  margin: auto;
+  margin-top: 20px;
+}
+
+footer ul{
+  display: table;
+  margin: auto;
+  width: 40%;
+}
+
+footer li{
+  margin-bottom: 5px;
+}
+
+footer a{
+  font-size: 16px;
+}
+
+.redirecionar{ 
+  font-size: 18px;
+  display: table;
+  margin-left: 40px;
+  grid-area: "redi";
+  min-width: 140px;
+  max-width: 900px;
+}
+
+.redirecionar img{
+  display: flexbox;
+  height: 12.5%;
+  width: 2.5%;
+  margin-left: 5px;
+}
+
+.email img{
+  display: flexbox;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  vertical-align: middle;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+.insta img{
+  display: flexbox;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  vertical-align: middle;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+.fundofooter{
+  background-color: #29282D;
+}
+
+@media (max-width:1000px){
+  .cardespaço{
+    max-width: 680px;
+    margin: auto;
+  }
+  .cardbody{
+    flex-direction: column;
+    min-width: 305px;
+    max-width: 306px;
+    margin: auto;
+  }
+}
+
+@media (max-width:900px){
+  .inicio{
+    flex-flow: row wrap;
+  }
+  .inic.img{
+    display: block;
+    order: 1;
+    width: 100%;
+    height: 350px;
+  }
+  .inic.texto{
+    display: block;
+    order: 2;
+    width: 100%;
+  }
+}
+
+@media (max-width: 800px){
+  .nav_links{
+    display: block;
+    position: absolute;
+    top: 4.755rem;
+    left: 0;      
+    width: 100%;
+    visibility: hidden;
+    overflow-y: hidden;
+    z-index: 1;
+  }
+  .nav_links li{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #625c60e5;
+
+  }
+  .nav_links li a{
+    color: #f0ece9;
+    padding: 20px;
+    font-size: 20px;
+  }
+  .cta{
+    display: none;
+  }
+  .btn-menu{
+    background: none;
+    border: none;
+    font: inherit;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(#6768ab);
+    padding-block: 1rem;
+    cursor: pointer;
+  }
+  .menu{
+    border-top: 0.125rem solid;
+    width: 1.25rem;
+  }
+  .menu::before,
+  .menu::after{
+    content: "";
+    display: block;
+    width: 1.25rem;
+    height: 0.125rem;
+    background: currentColor;
+    margin-top: 0.3125rem;
+  }
+}
+
+@media (max-width:750px){
+  .quemsomos h1{
+    width: 35%;
+  }
+}
+
+@media (max-width:700px){
+  .dulce img{
+    display: block;
+    float: none;
+    width: 80%;
+    height: 80%;
+    padding: 20px;
+  }
+  
+  .rose img{
+    display: block;
+    float: none;
+    width: 80%;
+    height: 80%;
+    padding: 20px;
+  }
+}
+
+@media (max-width:650px){
+  footer{
+    grid-template-areas: 
+    "uteis" 
+    "infos";
+  }
+  .infos{
+    margin: auto;
+  }
+}
+
+@media (max-width:600px){
+  .boxservicos{
+    grid-template-columns: 1fr 1fr;
+  }
+  .quemsomos h1{
+    width: 50%;
+  }
+}
+
+@media (max-width:520px){
+  .boxservicos{
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width:500px){
+  .inic.img{
+    height: 220px;
+  }
+  .dulce img{
+    display: block;
+    width: 90%;
+    height: 90%;
+    padding: 20px;
+  }
+    
+  .rose img{
+    display: block;
+    width: 90%;
+    height: 90%;
+    padding: 20px;
+    }
+}
+
+@media (max-width:400px){
+  .cardbody{
+    min-width: 200px;
+  }
+  .quemsomos h1{
+    width: 60%;
+  }
+}
+
+@media (max-width:340px){
+  .quemsomos h1{
+    width: 65%;
+  }
+}
+
+@media (max-width:320px){
+  .blog button{
+    margin-top: 20px;
+  }
+  .quemsomos h1{
+    width: 75%;
+  }
+}
+
+@media (max-width:305px){
+  .logo{
+    cursor: pointer;
+    height: 44px;
+    width: 131px;
+  }
+  .blog button{
+    margin-top: 40px;
+  }
+  .quemsomos h1{
+    width: 75%;
+  }
+}
+
+@media (max-width:280px){
+  .blog button{
+    margin-top: 65px;
+  }
+  .quemsomos h1{
+    width: 90%;
+  }
+}
